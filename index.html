@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        City Info App
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <div class="heading">
+            <center>
+                <h1>City Info App</h1>
+            </center>
+        </div>
+
+        <!-- Location Form -->
+        <form id="location-form" autocomplete="off">
+            <label>Enter city name in the input field below:</label>
+            <input type="text" id="city-name" class="form-control form-control-lg" size="3" placeholder="City name" autocomplete="false">
+            <br>
+        </form>
+        <center><button id="btn" class="btn btn-primary btn-block">Show Weather</button></center>
+
+        <!-- Weather Info -->
+        <center>
+            <h1 id="weatherheading">Weather</h1>
+        </center>
+        <center><img class="icon"></center>
+        <center>
+            <p class="weather"></p>
+        </center>
+        <center>
+            <p class="temp"></p>
+        </center>
+
+        <center><button id="mapbtn" class="btn btn-primary">Show Map and AQI</button></center>
+
+        <!-- AQI Info -->
+        <div id="aqi">
+            <center>
+                <h1 id="aqiheading">Air Quality Index</h1>
+            </center>
+            <center>
+                <h3 id="aqipara"></h3>
+            </center>
+            <center>
+                <h6 id="aqiparameter"></h6>
+            </center>
+            <center>
+                <h6 id="aqireport"></h6>
+            </center>
+            <center>
+                <h6 id="aqialert"></h6>
+            </center>
+        </div>
+
+        <!-- Map -->
+        <div id="mapHeading">
+            <center>
+                <h1>Map</h1>
+            </center>
+        </div>
+        <div id="map"></div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD14Kh4Wq3tEpMITJaOYzUgVZDTwI61Mzw" async defer>
+        </script>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
